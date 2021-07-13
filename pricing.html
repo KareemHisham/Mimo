@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Page</title>
+    <link rel="icon" type="image/jpg" href="assets/images/lunar-logo-vertical.jpg" />
+    <link rel="stylesheet" href="assets/css/vendors/all.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light dashboard">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets//images/lunar-logo-light.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="price-body">
+        <div class="container">
+            <div class="price-info">
+                <h2 class="title text-capitalize mt-3">pricing</h2>
+                <p class="lead">The preconfigured packages offer everything needed to get started quickly.</p> 
+                <p>Don’t see what you’re looking for? Visit our <span>sensors and components store</span> or <span>contact us</span>.</p>
+            </div>
+            <div class="price-content mt-5">
+                <ul class="list-unstyled">
+                    <li data-content=".developer">
+                        <div class="right-arrow active">
+                            <i class="fas fa-caret-right fa-2x"></i>
+                        </div>
+                        <span class="text-uppercase">developer package</span>
+                    </li>
+                    <li data-content=".explorer">
+                        <div class="right-arrow">
+                            <i class="fas fa-caret-right fa-2x"></i>
+                        </div>
+                        <span class="text-uppercase">explorer package</span>
+                    </li>
+                    <li data-content=".vision">
+                        <div class="right-arrow">
+                            <i class="fas fa-caret-right fa-2x"></i>
+                        </div>
+                        <span class="text-uppercase">vision package</span>
+                    </li>
+                </ul>
+                <div class="items">
+                    <div class="item developer">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="info">
+                                    <div class="title text-uppercase mt-4">developer package</div>
+                                    <p>We’ve partnered with NVIDIA to offer a "Lander5" built around the Jetson AGX Xavier: a fast, efficient computing device, ideal for robotics development. The JETSON developer package takes advantage of NVIDIA’s standard hardware interfaces and graphics processing capabilities. Built around a powerful and compact GPU, the Jetson is the preferred computing platform for VSLAM, 3D imaging and machine learning applications.</p>
+                                    <div class="price mb-3">
+                                        19,999
+                                        <span class="text-uppercase">egp</span>
+                                    </div>
+                                    <button class="text-uppercase">purchase</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="assets/images/Web-1366–7.svg" alt="Robot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item explorer">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="info">
+                                    <div class="title text-uppercase mt-4">explorer package</div>
+                                    <p>The Lander5 Explorer Package is designed for basic autonomous operation in both indoor and outdoor environments. Applications range from GPS waypoint navigation with laser-based collision avoidance, to indoor mapping and path planning. A powerful Mini-ITX computer system comes pre-installed with Linux and ROS; all component ROS drivers are installed and pre-configured.</p>
+                                    <div class="price mb-3">
+                                        24,999
+                                        <span class="text-uppercase">egp</span>
+                                    </div>
+                                    <button class="text-uppercase">purchase</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="assets/images/503.png" alt="Robot">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item vision">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="info">
+                                    <div class="title text-uppercase mt-4">vision package</div>
+                                    <p>The Lander5 Vision Package includes two front-facing FLIR Blackfly cameras for stereo vision, an upgraded GPU graphics card and a high performance computer. This package comes with a pre-installed CUDA toolkit, and is fully supported with ROS, RViz (visualization), and Gazebo (simulator).</p>
+                                    <div class="price mb-3">
+                                        29,999
+                                        <span class="text-uppercase">egp</span>
+                                    </div>
+                                    <button class="text-uppercase">purchase</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <img src="assets/images/602.JPG" alt="Robot">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <script src="assets/js/vendors/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

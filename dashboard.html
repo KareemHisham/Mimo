@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/jpg" href="assets/images/lunar-logo-vertical.jpg" />
+    <link rel="stylesheet" href="assets/css/vendors/all.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light dashboard">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets//images/lunar-logo-light.svg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="pricing.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="dashboard-body">
+        <div class="container">
+            <div class="dashboard-content">
+                <div class="sidebar">
+                    <ul class="list-unstyled">
+                        <li class="text-capitalize active">dashboard</li>
+                        <li class="text-capitalize">develop</li>
+                        <li class="text-capitalize">upgrade</li>
+                        <li class="text-capitalize">support</li>
+                    </ul>
+                    <div class="icon-change">
+                        <i class="fas fa-exchange-alt fa-fw fa-lg"></i>
+                    </div>
+                </div>
+                <div class="content">
+                    <h2 class="text-capitalize title my-3">dashboard</h2>
+                    <div class="status py-3">
+                        <img src="assets/images/Web-1366–7.svg" alt="Robot" />
+                        <div class="info">
+                            <h3 class="state text-capitalize">connected</h3>
+                            <ul class="list-unstyled">
+                                <li>Model: LANDER5</li>
+                                <li>Serial: l3s5g-d8</li>
+                                <li>Duration: 3 hours</li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                    <div class="statistics mt-4">
+                        <img src="assets/images/Graph.svg" alt="Graph" />
+                        <div class="statics">
+                            <div class="title text-capitalize">reading</div>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <span class="text-capitalize">battery:</span>
+                                    <span>55%</span>
+                                </li>
+                                <li>
+                                    <span class="text-capitalize">voltage:</span>
+                                    <span>48.6V</span>
+                                </li>
+                                <li>
+                                    <span class="text-capitalize">speed:</span>
+                                    <span>3 m/s</span>
+                                </li>
+                                <li>
+                                    <span class="text-capitalize">location:</span>
+                                    <span>cairo</span>
+                                </li>
+                                <li>
+                                    <span class="text-capitalize">signal strength:</span>
+                                    <span>77%</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <script src="assets/js/vendors/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

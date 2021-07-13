@@ -1,0 +1,527 @@
+/* Start Global Code */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --mainColor: #C50000;
+    --white: #fff;
+    --grey: #00000029;
+    --darkGrey:#373737;
+    --dark: #333333;
+}
+img {
+    max-width: 100%;
+}
+.move-side {
+    left: 0 !important;
+}
+/* End Global Code */
+/* Start Common Code */
+.navbar-light .navbar-nav .nav-link:hover,
+nav.dashboard .navbar-nav .nav-item .nav-link:hover,
+nav.dashboard .navbar-nav .nav-item .nav-link.active,
+.dashboard-body .dashboard-content .sidebar ul li,
+.dashboard-body .dashboard-content .content .status .info .state,
+.dashboard-body .dashboard-content .content .statistics .statics ul li span:first-child,
+.price-body .price-info .title,
+.price-body .price-info p span,
+.price-body .price-content .items .item .info .price,
+.price-body .price-content .items .item .info button {
+    color: var(--mainColor);
+}
+.navbar-light .navbar-nav .nav-link,
+.home-body,
+.home-body .info .btns button,
+.home .social-media a,
+.dashboard-body .dashboard-content .sidebar ul li:hover,
+.dashboard-body .dashboard-content .sidebar ul li.active,
+.dashboard-body .dashboard-content .content .statistics .statics .title,
+.price-body .price-content ul li,
+.price-body .price-content .items .item .info button:hover {
+    color: var(--white);
+}
+
+.dashboard-body .dashboard-content .content .status .info ul li,
+nav.dashboard .navbar-nav .nav-item .nav-link,
+.dashboard-body .dashboard-content .content .statistics .statics ul li span:last-child {
+    color: var(--darkGrey);
+}
+.price-body .price-info p,
+.price-body .price-content .items .item .info .title {
+    color: var(--dark);
+}
+.home-body .info .btns button:first-child,
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot,
+.dashboard-body .dashboard-content .sidebar ul li:hover,
+.dashboard-body .dashboard-content .sidebar ul li.active,
+.dashboard-body .dashboard-content .content .statistics .statics .title,
+.price-body .price-content ul li,
+.price-body .price-content .items .item .info button:hover {
+    background-color: var(--mainColor);
+}
+.home-body .info p,
+.home-body .info .btns button,
+.price-body .price-info p,
+.price-body .price-content ul li span,
+.price-body .price-content .items .item .info p {
+    font: 400 16px 'Roboto', sans-serif;
+}
+.home-body .info .title,
+.dashboard-body .dashboard-content .sidebar ul li {
+    font: 500 16px 'Roboto', sans-serif;
+}
+.dashboard-body .dashboard-content .content .status .info ul li,
+.dashboard-body .dashboard-content .content .statistics .statics ul li span:first-child,
+.dashboard-body .dashboard-content .content .statistics .statics ul li span:last-child {
+    font: 400 14px 'Roboto', sans-serif;
+}
+.price-body .price-info .title,
+.price-body .price-content .items .item .info .price {
+    font: 700 32px 'Roboto', sans-serif;
+}
+/* End Common Code */
+/* Start Navbar */
+nav {
+    z-index: 2;
+}
+.navbar-nav {
+    justify-content: center;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-light .navbar-toggler {
+    border-color: var(--white);
+}
+/* End Navbar */
+/* Start Home Section */
+.home {
+    position: relative;
+    height: 100vh;
+}
+.home::before {
+    content: "";
+    background-image: url("../images/DSC_0038.JPG");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.home-body {
+    width: 1295px;
+    margin: 110px auto 0;
+}
+.home-body .body-info {
+    border-radius: 0px 10px 10px 0px;
+    -webkit-backdrop-filter: blur(140px);
+    backdrop-filter: blur(140px);
+    padding: 3.5rem;
+}
+.home-body .info .title {
+    margin-bottom: 20px;
+}
+.home-body .info h1 {
+    font: 700 2.6rem 'Roboto', sans-serif;
+}
+.home-body .info .title,
+.home-body .info h1 {
+    text-shadow: 0px 3px 6px var(--grey);
+}
+.home-body .info p {
+    margin: 0;
+    text-shadow: 1px 1px 3px var(--grey);
+}
+.home-body .info .btns {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+.home-body .info .btns button {
+    border: 1px solid transparent;
+    padding: 0.7rem 2.4rem;
+    width: 248px;
+    height: 54px;
+}
+.home-body .info .btns button:first-child {
+    margin-right: 15px;
+}
+.home-body .info .btns button:last-child {
+    background-color:transparent;
+    border: 1px solid var(--white);
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel button.owl-dot {
+    width: 24px;
+    height: 24px;
+    line-height: 0px;
+}
+.owl-carousel .owl-nav button span {
+    font-weight: bold;
+    font-size: 30px;
+}
+.owl-carousel .owl-nav button.owl-prev {
+    margin-right: 10px;
+}
+.owl-carousel .owl-nav button.disabled {
+    background-color: grey;
+    cursor: no-drop;
+}
+.home .social-media {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.home .social-media .youtube {
+    margin-bottom: 20px;
+}
+.home .social-media .youtube a,
+.home .social-media .fb a {
+    transition: color .4s linear;
+}
+.home .social-media .youtube a:hover {
+    color: #ff0000;
+}
+.home .social-media .fb a:hover {
+    color: #1877f2;
+}
+/* End Home Section */
+/* Start Dashboard Page */
+nav.dashboard {
+    border-bottom: 1px solid #c5000099;
+}
+nav.dashboard .navbar-brand {
+    max-width: 15%;
+}
+nav.dashboard .navbar-nav .nav-item .nav-link {
+    font: 700 16px 'Roboto', sans-serif;
+    transition: color .4s linear;
+    position: relative;
+}
+nav.dashboard .navbar-nav .nav-item .nav-link.active::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    width: 100%;
+    border-bottom: 3px solid var(--mainColor);
+}
+.dashboard-body .dashboard-content {
+    display: flex;
+}
+.dashboard-body .dashboard-content .sidebar {
+    border: 1px solid #E3E3E3;
+    border-top: none;
+    height: 100vh;
+    width: 260px;
+    position: relative;
+}
+.dashboard-body .dashboard-content .sidebar ul li {
+    border-bottom: 1px solid #E3E3E3;
+    padding: 20px 19px;
+    cursor: pointer;
+    transition: background-color .4s linear, color .4s linear, padding-left .4s linear;
+    width: 260px;
+    height: 60px;
+}
+.dashboard-body .dashboard-content .sidebar ul li:hover,
+.dashboard-body .dashboard-content .sidebar ul li.active {
+    padding-left: 30px;
+}
+.dashboard-body .dashboard-content .sidebar .icon-change {
+    position: absolute;
+    right: -27px;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+.dashboard-body .dashboard-content .content {
+    margin-left: 20px;
+}
+.dashboard-body .dashboard-content .content .status {
+    border: 1px solid var(--mainColor);
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+.dashboard-body .dashboard-content .content .status img {
+    max-width: 30%;
+    margin-right: 30px;
+}
+.dashboard-body .dashboard-content .content .status .info {
+    border-left: 2px solid #707070;
+    padding-left: 10px;
+}
+.dashboard-body .dashboard-content .content .status .info .state {
+    font: 500 24px 'Roboto', sans-serif;
+}
+.dashboard-body .dashboard-content .content .status .info ul {
+    margin: 0;
+}
+.dashboard-body .dashboard-content .content .status .info ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.dashboard-body .dashboard-content .content .statistics {
+    display: flex;
+}
+.dashboard-body .dashboard-content .content .statistics .statics {
+    border: 1px solid var(--mainColor);
+    width: 201px;
+    height: 203px;
+    margin-left: 20px;
+}
+.dashboard-body .dashboard-content .content .statistics .statics .title {
+    font: 500 13px 'Roboto', sans-serif;
+    padding: 4px 0 4px 10px;
+}
+.dashboard-body .dashboard-content .content .statistics .statics ul {
+    padding: 5px 10px;
+}
+.dashboard-body .dashboard-content .content .statistics .statics ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* End Dashboard Page */
+/* Start Pricing Page */
+.price-body .price-info p {
+    margin: 0;
+}
+.price-body .price-content ul {
+    display: flex;
+    align-items: center;
+}
+.price-body .price-content ul li {
+    cursor: pointer;
+    width: 259px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.price-body .price-content ul li .right-arrow {
+    transition: transform .3s linear;
+}
+.price-body .price-content ul li .right-arrow.active {
+    transform: rotate(90deg);
+}
+.price-body .price-content ul li:not(:last-child) {
+    margin-right: 20px;
+}
+.price-body .price-content .items .item {
+    display: none;
+}
+.price-body .price-content .items .item:first-child {
+    display: block;
+}
+.price-body .price-content .items .item .info .title {
+    font: 700 20px 'Roboto', sans-serif;
+    margin-bottom: 15px;
+}
+.price-body .price-content .items .item .info p {
+    line-height: 25px;
+    color: #333333;
+}
+.price-body .price-content .items .item .info .price {
+    position: relative;
+}
+.price-body .price-content .items .item .info .price span {
+    position: absolute;
+    left: 110px;
+    top: 0px;
+    font-size: 16px;
+}
+.price-body .price-content .items .item .info button {
+    background-color: transparent;
+    border: 1px solid var(--mainColor);
+    width: 248px;
+    height: 54px;
+    transition: background-color .4s linear, color .4s linear;
+}
+.price-body .price-content .items .item img {
+    animation-duration: 7s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+}
+/* End Pricing Page */
+/* Start Animation */
+@keyframes move {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/* End Animation */
+
+/* Start Media Query */
+
+/* Start Navbar */
+@media(max-width: 767px) {
+    nav.dashboard .navbar-nav .nav-item .nav-link.active::after {
+        display: none;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+    nav.dashboard .navbar-nav .nav-item .nav-link.active::after {
+        bottom: -15px;
+    }
+}
+/* End Navbar*/
+/* Start Home Page */
+@media(max-width: 575px) {
+    .home-body .info .btns button:last-child {
+        width: 223px;
+    }
+}
+@media(min-width: 360px) and (max-width: 991px) {
+    .home-body .body-info .item {
+        text-align: center;
+    }
+}
+@media(min-width: 360px) and (max-width: 1399px) {
+    .home {
+        height: unset;
+    }
+    .home-body {
+        width: 100%;
+    }
+    .home-body .owl-carousel .owl-nav {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .home-body .info .btns {
+        flex-direction: column;
+    }
+    .home-body .info .btns button:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-body .info .btns {
+        flex-direction: unset;
+        justify-content: center;
+    }
+    .home-body .info .btns button:first-child {
+        margin-bottom: 0;
+        margin-right: 20px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+    .home-body .body-info .item {
+        text-align: unset !important;
+    }
+    .home-body .info .btns {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-body .info .btns button:first-child {
+        margin-right: 0;        
+        margin-bottom: 20px;
+    }
+    .row {
+        align-items: center;
+    }
+}
+/* End Home Page */
+
+/* Start Pricing Page */
+@media(max-width: 767px) {
+    .price-body .price-info {
+        text-align: center;
+    }
+    .price-body .price-content ul {
+        flex-direction: column;
+    }
+    .price-body .price-content ul li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .price-body .price-content .items .item .info {
+        text-align: center;
+    }
+}
+@media(max-width: 575px) {
+    .price-body .price-content .items .item .info .price span {
+        left: 220px;
+    }
+}
+@media(min-width: 576px) and (max-width: 767px) {
+    .price-body .price-content .items .item .info .price span {
+        left: 310px;
+    }
+}
+/* End Pricing Page */
+
+/* Start Dashboard */
+@media(max-width: 991px) {
+    .dashboard-body .dashboard-content {
+        flex-direction: column;
+    }
+    .dashboard-body .dashboard-content .sidebar {
+        background-color: white;
+        position: fixed;
+        left: -261px;
+        transition: left .4s linear;
+    }
+    .dashboard-body .dashboard-content .sidebar .icon-change {
+        display: block;
+    }
+    .dashboard-body .dashboard-content .content .title {
+        text-align: center;
+    }
+    .dashboard-body .dashboard-content .content .status {
+        width: 100%;
+        flex-direction: column;
+    }
+    .dashboard-body .dashboard-content .content .status img {
+        max-width: 80%;
+    }
+    .dashboard-body .dashboard-content .content .status .info {
+        border: none;
+        margin-top: 20px;
+    }
+    .dashboard-body .dashboard-content .content .statistics {
+        flex-direction: column;
+    }
+    .dashboard-body .dashboard-content .content .statistics img {
+        margin-bottom: 20px;
+    }
+    .dashboard-body .dashboard-content .content .statistics .statics {
+        width: 100%;
+        margin-left: 0;
+    }
+    .dashboard-body .dashboard-content .content .statistics .statics ul li span:first-child,
+    .dashboard-body .dashboard-content .content .statistics .statics ul li span:last-child,
+    .dashboard-body .dashboard-content .content .statistics .statics .title {
+        font-size: 20px;
+    }
+}
+@media(min-width: 992px) and (max-width: 1199px) {
+    .dashboard-body .dashboard-content .content .status {
+        width: unset;
+    }
+    .dashboard-body .dashboard-content .content .statistics .statics {
+        margin-left: 20px;
+    }
+    .dashboard-body .dashboard-content .content .statistics .statics ul li span:first-child,
+    .dashboard-body .dashboard-content .content .statistics .statics ul li span:last-child,
+    .dashboard-body .dashboard-content .content .statistics .statics .title {
+        font-size: 20px;
+    }
+} 
+/* End Dashboard */
+
+/* End Media Query */
